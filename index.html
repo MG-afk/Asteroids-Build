@@ -6,6 +6,23 @@
     <title>Unity Web Player | Asteroids</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+
+    <style>
+
+      body {
+        background-color: #202021;
+      }
+
+      h1 {
+        color: whitesmoke;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+
+      }
+
+    </style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -20,7 +37,7 @@
       <div id="unity-footer">
         <div id="unity-logo-title-footer"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">Asteroids</div>
+        <h1>ASTEROIDS BY MICHAL</h1>
       </div>
     </div>
     <script>
@@ -46,7 +63,7 @@
           setTimeout(function() {
             warningBanner.removeChild(div);
             updateBannerVisibility();
-          }, 5000);
+          }, 1000);
         }
         updateBannerVisibility();
       }
